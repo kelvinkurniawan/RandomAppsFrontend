@@ -1,194 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/stylesheets/tailwind.css" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
+    <% include partials/head %>
   </head>
   <body class="bg-red-300">
     <div class="container bg-red-200 w-4/5 mx-auto mt-4 rounded-lg shadow-lg">
       <!-- Header -->
-      <div class="header bg-white rounded-t-lg">
-        <div class="flex p-4">
-          <div class="flex justify-between items-center w-1/4 px-4">
-            <h1><%= title %></h1>
-            <i class="fas fa-home"></i>
-          </div>
-          <div class="flex justify-between items-center w-2/4 px-4">
-            <div class="left-section">
-              <p class="font-bold">Discover</p>
-            </div>
-            <div class="right-section">
-              <i class="fas fa-search mr-4"></i
-              ><button
-                class="bg-red-400 hover:bg-red-500 text-white text-xs font-bold py-2 px-4 rounded-full"
-              >
-                Create Stories
-              </button>
-            </div>
-          </div>
-          <div class="flex justify-between items-center w-1/4 px-4">
-            <div class="left-section">
-              <i class="far fa-bell"></i>
-            </div>
-            <div class="right-section flex justify-between items-center">
-              <p class="mr-2">Kelvin</p>
-              <i class="fas fa-user"></i>
-            </div>
-          </div>
-        </div>
-      </div>
+      <% include partials/headerLoggedInUser %>
       <!-- End of header -->
 
       <!-- Content -->
-      <!-- Left side -->
       <div class="content pt-1">
         <div class="flex">
-          <div
-            class="flex justify-between w-1/4 px-8 py-4 bg-white rounded-r-lg rounded-bl-lg shadow-lg"
-          >
-            <div class="content-block w-full">
-              <div class="header-block flex justify-between">
-                <p class="text-xs font-bold text-uppercase tracking-wide">
-                  TOP STORIES
-                </p>
-                <a
-                  href="#"
-                  class="text-xs font-bold text-uppercase text-orange-500"
-                >
-                  ALL
-                </a>
-              </div>
-              <div class="body-block mt-4 divide-y divide-gray-400">
-                <div class="font-bold text-sm py-4">
-                  <p>
-                    # Tinggal Kenangan
-                    <span class="block text-xs font-medium text-gray-600"
-                      >By anonymous</span
-                    >
-                  </p>
-                </div>
-                <div class="font-bold text-sm py-4">
-                  <p>
-                    # Rapuh
-                    <span class="block text-xs font-medium text-gray-600"
-                      >By bambank</span
-                    >
-                  </p>
-                </div>
-                <div class="font-bold text-sm py-4">
-                  <p>
-                    # Satu hariku tanpamu
-                    <span class="block text-xs font-medium text-gray-600"
-                      >By anonymous</span
-                    >
-                  </p>
-                </div>
-                <div class="font-bold text-sm py-4">
-                  <p>
-                    # Bahagiaku adalah kamu
-                    <span class="block text-xs font-medium text-gray-600"
-                      >By anonymous</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex w-2/4 px-4">
-            <div class="body-block w-full">
-              <div
-                class="post-block flex justify-between bg-white p-4 mb-4 rounded-lg shadow-lg"
-              >
-                <div class="post-avatar mr-4">
-                  <i class="fas fa-user-secret fa-3x text-gray-700"></i>
-                </div>
-                <div class="post">
-                  <div class="post-author">
-                    <p class="text-sm font-bold tracking-wide">Anonymous</p>
-                  </div>
-                  <div class="post-content mt-2">
-                    <p class="text-sm">
-                      Tinggal kenangan - semua yang kau berikan kini menjadi
-                      sebuah bagian dari ingatan yang tak bisa untuk ku lupakan,
-                      meskipun begitu aku cukup bersyukur, pertemuan singkat ini
-                      membuatku hidup
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single -->
-              <div
-                class="post-block flex justify-between bg-white p-4 mb-4 rounded-lg shadow-lg"
-              >
-                <div class="post-avatar mr-4">
-                  <i class="fas fa-user-secret fa-3x text-gray-700"></i>
-                </div>
-                <div class="post">
-                  <div class="post-author">
-                    <p class="text-sm font-bold tracking-wide">Anonymous</p>
-                  </div>
-                  <div class="post-content mt-2">
-                    <p class="text-sm">
-                      Tinggal kenangan - semua yang kau berikan kini menjadi
-                      sebuah bagian dari ingatan yang tak bisa untuk ku lupakan,
-                      meskipun begitu aku cukup bersyukur, pertemuan singkat ini
-                      membuatku hidup
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single -->
-              <div
-                class="post-block flex justify-between bg-white p-4 mb-4 rounded-lg shadow-lg"
-              >
-                <div class="post-avatar mr-4">
-                  <i class="fas fa-user-secret fa-3x text-gray-700"></i>
-                </div>
-                <div class="post">
-                  <div class="post-author">
-                    <p class="text-sm font-bold tracking-wide">Anonymous</p>
-                  </div>
-                  <div class="post-content mt-2">
-                    <p class="text-sm">
-                      Tinggal kenangan - semua yang kau berikan kini menjadi
-                      sebuah bagian dari ingatan yang tak bisa untuk ku lupakan,
-                      meskipun begitu aku cukup bersyukur, pertemuan singkat ini
-                      membuatku hidup
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single -->
-              <div
-                class="post-block flex justify-between bg-white p-4 mb-4 rounded-lg shadow-lg"
-              >
-                <div class="post-avatar mr-4">
-                  <i class="fas fa-user-secret fa-3x text-gray-700"></i>
-                </div>
-                <div class="post">
-                  <div class="post-author">
-                    <p class="text-sm font-bold tracking-wide">Anonymous</p>
-                  </div>
-                  <div class="post-content mt-2">
-                    <p class="text-sm">
-                      Tinggal kenangan - semua yang kau berikan kini menjadi
-                      sebuah bagian dari ingatan yang tak bisa untuk ku lupakan,
-                      meskipun begitu aku cukup bersyukur, pertemuan singkat ini
-                      membuatku hidup
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Single -->
-            </div>
-          </div>
+          <!-- Left side -->
+          <% include partials/homepage/leftSide %>
+          <!-- Center -->
+          <% include partials/homepage/center %>
+          <!-- Right side -->
+          <% include partials/homepage/rightSide %>
         </div>
       </div>
       <!-- End of left side -->
